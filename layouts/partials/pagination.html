@@ -1,0 +1,11 @@
+                 <div class="pager">
+                 <nav>
+                {{if .Prev}}
+                    <a  href="{{ .Prev.Url }}">Previous</a>
+                {{end}}
+                {{if .Next}}
+                    <a  href="{{ .Next.Url }}">Next</a>
+                {{end}}
+                </nav>
+                 </div>
+             
