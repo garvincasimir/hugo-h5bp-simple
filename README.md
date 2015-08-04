@@ -1,2 +1,2 @@
 # hugo-h5bp-simple
-Simple responsive them for Go Hugo
+Simple responsive theme for Go Hugo
