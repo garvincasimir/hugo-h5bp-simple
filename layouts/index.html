@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
     {{ partial "aside.html" . }}   
-    {{ range first 10 .Data.Pages }}
+    {{ range first 10 .Site.mainSections }}
     <article>
         <header> 
             <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
