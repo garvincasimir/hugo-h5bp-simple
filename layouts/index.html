@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
-    {{ partial "aside.html" . }}   
-    {{ range first 10 .Site.mainSections }}
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range $pages }}
     <article>
         <header> 
             <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
